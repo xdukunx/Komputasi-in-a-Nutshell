@@ -48,4 +48,30 @@ Untuk login ke SSH (Secure Shell), kamu memerlukan akses ke server yang mendukun
 
 ## Login Menggunakan Terminal/Powershell
 1. Buka aplikasi Terminal(MacOS/Linux) atau Command Prompt/Powershell (Windows)
-![startscreenSSH](https://github.com/xdukunx/Komputasi-in-a-Nutshell/blob/main/ImageResource/_DSC0008dddx%20(1).jpg)
+![startscreenSSH](https://github.com/xdukunx/Komputasi-in-a-Nutshell/blob/85acd671a43c62aad88d7ec5e6adf6339b6f9325/ImageResource/image_2025-07-20_214103750.png)
+
+2. Gunakan perintah berikut untuk login ke server:
+```bash
+ ssh username@hostname.or.ip.address.of.server
+ Gantilah username dengan nama pengguna di server, dan hostname_or_ip dengan alamat IP atau nama domain server.
+```
+Setelah menjalankan perintah tersebut, jika diminta, masukkan password akun pengguna di server.
+3. Jika menggunakan private key (baris kode pengaman untuk memberikan akses hanya untuk 1 device tertentu), pastikan private key ada di komputer yang kamu gunakan dan sudah diatur di server
+- Kamu dapat menambahkan ssh key dengan perintah berikut:
+```bash
+ ssh -i /path/to/private/key username@hostname_or_ip
+ Gantilah /path/to/private/key dengan ke kunci privat yang digunakan untuk autentikasi.
+```
+## Login Menggunakan WinSCP
+1. Buka aplikasi WinSCP
+![startscreenSSH]()
+
+2. Masukkan informasi host
+- Pilih SFTP sebagai koneksi.
+- Di kolom Host Name (or IP address), masukkan alamat IP atau domain dari server yang ingin kamu akses.
+- Di kolom Port, masukkan 22 (default untuk SSH).
+- Di kolom
+
+Setelah menjalankan perintah tersebut, jika diminta, masukkan password akun pengguna di server.
+3. Jika menggunakan private key (baris kode pengaman untuk memberikan akses hanya untuk 1 device tertentu), pastikan private key ada di komputer yang kamu gunakan dan sudah diatur di server
+- Kamu dapat menambahkan ssh key dengan perintah berikut:
