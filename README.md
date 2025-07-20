@@ -48,5 +48,6 @@ Untuk login ke SSH (Secure Shell), kamu memerlukan akses ke server yang mendukun
 
 ## Login Menggunakan Terminal/Powershell
 1. Buka aplikasi Terminal(MacOS/Linux) atau Command Prompt/Powershell (Windows)
-![startscreen SSH](https://github.com/xdukunx/Komputasi-in-a-Nutshell/blob/main/ImageResource/image_2025-07-20_213646843.png)
+![startscreenSSH](https://github.com/xdukunx/Komputasi-in-a-Nutshell/blob/main/ImageResource/image_2025-07-20_214103750.png)
+
 
