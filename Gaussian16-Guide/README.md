@@ -172,7 +172,19 @@ GaussView akan memungkinkan Anda untuk memilih orbital tertentu, seperti HOMO (H
 
 - Akan muncul window yang akan menampilkan posisi dan energi HOMO dan LUMO
 ![windowHomo](https://github.com/user-attachments/assets/fbc8926a-1a53-4100-9632-d22df78f394d)
-## Memeriksa
+
+## Memeriksa Grafik Spektrum dan Energi Optimasi
+Jika perhitungan Gaussian Anda mencakup spektrum UV-Vis atau perhitungan semacamnya, anda dapat memeriksanya dengan menggunakan langkah berikut:
+- Pilih tab "Results"
+- Untuk memeriksa Grafik Spektrum, pilih tab sesuai dengan metode perhitungan yang sudah dilakukan
+
+![UV](https://github.com/user-attachments/assets/a3caa4de-3567-4380-ad94-b68b7bb5c8ee)
+
+- Untuk memeriksa Energi Optimasi, pilih "Summary"
+
+![Summary](https://github.com/user-attachments/assets/cb2cbce5-a2bd-40c5-ac56-82e467e47455)
+
+Akan muncul tabel seperti tampilan diatas, tersedia ringkasan data seperti data "E" adalah energi optimasi dari molekul.
 
 ## Troubleshooting
 Solusi untuk masalah umum yang mungkin terjadi selama instalasi dan penggunaan Gaussian 16.
