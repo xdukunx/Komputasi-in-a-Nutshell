@@ -1,5 +1,25 @@
 # Komputasi in a Nutshell
-Repo ini merupakan proses dan perjalanan Dhana dalam menggiati Kimia Komputasi, semua proses di sini hanyalah penjelasan proses penggunaan, proses pemasangan setiap software dijelaskan tempat lain. Selamat membaca.
+Repo ini merupakan proses dan perjalanan Dhana dalam menggiati Kimia Komputasi, semua proses di sini hanyalah penjelasan proses penggunaan, proses pemasangan setiap software dijelaskan tiap folder masing2. Selamat membaca.
+
+# Daftar Isi
+- [Komputasi in a Nutshell](#komputasi-in-a-nutshell)
+- [Software Komputasi yang Digunakan Penulis](#software-komputasi-yang-digunakan-penulis)
+  - [Avogadro - Pemodelan Material](#avogadro---pemodelan-material)
+  - [Chemdraw - Pemodelan Molekul Kimia](#chemdraw---pemodelan-molekul-kimia)
+  - [Materials Studio - Pemodelan & Simulasi Bahan Material](#materials-studio---pemodelan--simulasi-bahan-material)
+  - [Hyperchem - Pemodelan Molekul dan Simulasi Kimia](#hyperchem---pemodelan-molekul-dan-simulasi-kimia)
+  - [Gaussian16 - Perhitungan DFT - TD DFT Kimia Komputasi](#gaussian16---perhitungan-dft---td-dft-kimia-komputasi)
+  - [Orca - Perhitungan Kimia Kuantum dan Analisis Spektral](#orca---perhitungan-kimia-kuantum-dan-analisis-spektral)
+  - [Chimera - Visualisasi dan Analisis Molekul](#chimera---visualisasi-dan-analisis-molekul)
+  - [AMBER - Simulasi Dinamika Molekul](#amber---simulasi-dinamika-molekul)
+  - [Gaussview - Visualisasi Hasil Perhitungan Gaussian](#gaussview---visualisasi-hasil-perhitungan-gaussian)
+  - [Multiwfn - Analisis dan Visualisasi Hasil Perhitungan](#multiwfn---analisis-dan-visualisasi-hasil-perhitungan)
+  - [Notepad++ - Text Editor](#notepad---text-editor)
+  - [Termius - Manajemen & Akses SSH](#termius---manajemen--akses-ssh)
+  - [WinSCP - Transfer File melalui SFTP dan FTP](#winscp---transfer-file-melalui-sftp-dan-ftp)
+- [Tutorial Login SSH (Masuk ke Server)](#tutorial-login-ssh-masuk-ke-server)
+  - [Login Menggunakan Terminal/Powershell](#login-menggunakan-terminalpowershell)
+  - [Login Menggunakan WinSCP](#login-menggunakan-winscp)
 
 
 # Software komputasi yang digunakan penulis sejauh ini:
@@ -41,7 +61,7 @@ Notepad++ adalah editor teks yang mendukung berbagai bahasa pemrograman dan form
 Termius adalah aplikasi untuk mengelola koneksi SSH, memungkinkan pengguna untuk terhubung dan mengelola server jarak jauh secara aman. Ini sangat berguna untuk menjalankan perhitungan kimia komputasi di server. [(unduh di sini)](https://termius.com/)
 
 ## WinSCP - Transfer File melalui SFTP dan FTP
-WinSCP adalah aplikasi untuk mentransfer file antara sistem lokal dan remote melalui protokol SFTP, FTP, dan SCP. Ini digunakan untuk memindahkan file input dan output antara perangkat lunak kimia komputasi yang berjalan di server dan komputer lokal. [(unduh di sini)](https://winscp.net/eng/index.php)
+WinSCP adalah aplikasi untuk mentransfer file antara sistem lokal dan remote melalui protokol SFTP, FTP, dan SCP. Ini digunakan untuk memindahkan file input dan output antara perangkat lunak kimia komputasi yang berjalan di server dan komputer lokal. Penggunaan ini cocok untuk mempermudah perpindahan file dengan bantuan GUI  [(unduh di sini)](https://winscp.net/eng/index.php)
 
 # Tutorial Login SSH (Masuk ke Server)
 Untuk login ke SSH (Secure Shell), kamu memerlukan akses ke server yang mendukung SSH dan kredensial (biasanya berupa username dan password atau kunci SSH) yang sesuai. Berikut adalah langkah-langkah untuk login ke SSH menggunakan beberapa alat yang umum digunakan, seperti Termius, WinSCP, dan Terminal (Linux/macOS) atau Command Prompt (Windows).
@@ -64,14 +84,11 @@ Setelah menjalankan perintah tersebut, jika diminta, masukkan password akun peng
 ```
 ## Login Menggunakan WinSCP
 1. Buka aplikasi WinSCP
-![startscreenSSH]()
+![startscreenSSH](https://github.com/user-attachments/assets/96756308-fe9e-4674-a943-da355ceeff02)
 
 2. Masukkan informasi host
 - Pilih SFTP sebagai koneksi.
 - Di kolom Host Name (or IP address), masukkan alamat IP atau domain dari server yang ingin kamu akses.
 - Di kolom Port, masukkan 22 (default untuk SSH).
-- Di kolom
+- Di kolom username dan password, masukkan data dari akun yang kamu punya (jika belum mempunyai ini, silahkan hubungi admin server)
 
-Setelah menjalankan perintah tersebut, jika diminta, masukkan password akun pengguna di server.
-3. Jika menggunakan private key (baris kode pengaman untuk memberikan akses hanya untuk 1 device tertentu), pastikan private key ada di komputer yang kamu gunakan dan sudah diatur di server
-- Kamu dapat menambahkan ssh key dengan perintah berikut:
