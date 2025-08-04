@@ -19,7 +19,7 @@ Panduan ini menjelaskan cara menginstal, mengonfigurasi, dan menjalankan **Gauss
 - Ruang penyimpanan yang cukup untuk instalasi
 - Akses ke server dengan Gaussian 16
 
-## Instalasi Gaussian 16
+# Instalasi Gaussian 16
 Langkah-langkah untuk menginstal Gaussian 16 di sistem Anda:
 1. **Persiapkan Direktori** tempat instalasi, anda bebas menggunakan metode apapun (Terminal/SFTP). Sebagai contoh, saya menaruh Gaussian 16 di 
 
@@ -110,7 +110,7 @@ source ~/.bashrc
 
 # Menjalankan Gaussian 16
 Setelah Anda berhasil menginstal Gaussian 16, langkah selanjutnya adalah menyiapkan file input yang akan digunakan untuk perhitungan kimia komputasi. File input untuk Gaussian 16 dapat berupa dua format utama: .com dan .gjf. Kedua format ini pada dasarnya memiliki fungsi yang sama, yaitu untuk memberikan instruksi kepada Gaussian 16 mengenai perhitungan yang akan dilakukan, tetapi .com lebih umum digunakan, sedangkan .gjf lebih sering digunakan untuk file yang dihasilkan atau diekspor dari aplikasi lain, seperti GaussView.
-
+## Pembuatan Input File
 [GaussView](https://drive.google.com/file/d/12rvIudLKtjXZCQGpXtvfxb-rztYlLvnd/view?usp=drive_link) adalah antarmuka grafis untuk Gaussian 16 yang dirancang untuk membantu pengguna dalam memodelkan struktur molekul, menyiapkan file input, dan membaca hasil output dari perhitungan Gaussian 16.
 
 ![tampilanGaussView](https://github.com/user-attachments/assets/df93734e-308d-40d8-8863-991c1926d208)
@@ -118,7 +118,7 @@ Setelah Anda berhasil menginstal Gaussian 16, langkah selanjutnya adalah menyiap
 Setelah molekul dimodelkan, GaussView memungkinkan Anda untuk menyimpan file input untuk Gaussian 16 dalam format .com atau .gjf. Anda dapat memilih jenis perhitungan yang ingin dilakukan, seperti optimasi geometri atau perhitungan energi.
 
 ![pembuatangjf](https://github.com/user-attachments/assets/e7ae1486-889e-451e-b70b-97c2ca2496b5)
-
+## Menjalankan 1 job
 Setelah file input dibuat, tahapan selanjutnya yaitu menguji molekul yang kita buat di Gaussian. Pindahkan file input ke Server untuk proses kalkulasi.
 Setelah file input siap, jalankan Gaussian 16 dengan perintah berikut:
 ```bash
@@ -156,6 +156,21 @@ Setelah skrip batch selesai dibuat, jalankan perhitungan dengan perintah berikut
 ```bash
 sbatch Gauss.sh # Ganti Gauss.sh sesuai dengan nama file skrip batch yang anda buat
 ```
+Perhitungan akan berjalan di server, dan outputnya akan disimpan dalam file dengan ekstensi .out/.log. Anda dapat memeriksa file output untuk hasil perhitungan setelah selesai.
+
+# Memeriksa Hasil Kalkulasi dengan GaussView
+Setelah proses kalkulasi berlangsung, tentunya kita perlu mengetahui hasil yang diberikan dari proses kalkulasi. Berikut langkah-langkahnya:
+- Pindahkan file output dari server ke laptop/komputer pribadi (local)
+- Buka Gaussview, buka file .out/.log yang berisi hasil perhitungan
+Setelah file output dibuka, GaussView akan menampilkan struktur geometri molekul yang dioptimalkan, termasuk posisi atom-atom setelah perhitungan.
+## Memeriksa Orbital Molekul (MOs)
+GaussView akan memungkinkan Anda untuk memilih orbital tertentu, seperti HOMO (Highest Occupied Molecular Orbital) atau LUMO (Lowest Unoccupied Molecular Orbital). Dengan langkah berikut:
+![mbukakHomo](https://github.com/user-attachments/assets/cd41c222-fae8-439e-9568-c2d74e24956f)
+- Pilih tab "Tools"
+- Pilih tab "MOs.."
+- Akan muncul window yang akan menampilkan posisi dan energi HOMO dan LUMO
+![windowHomo](https://github.com/user-attachments/assets/fbc8926a-1a53-4100-9632-d22df78f394d)
+## Memeriksa
 
 ## Troubleshooting
 Solusi untuk masalah umum yang mungkin terjadi selama instalasi dan penggunaan Gaussian 16.
