@@ -187,7 +187,7 @@ Jika perhitungan Gaussian Anda mencakup spektrum UV-Vis atau perhitungan semacam
 Akan muncul tabel seperti tampilan diatas, tersedia ringkasan data seperti data "E" adalah energi optimasi dari molekul.
 
 ## Troubleshooting
-Solusi untuk masalah umum yang mungkin terjadi selama instalasi dan penggunaan Gaussian 16.
+Skill issue, GPT sana
 
 ## Penutup
-Ringkasan dan tips akhir untuk menggunakan Gaussian 16 dengan sukses.
+Dengan memahami cara menginstal, mengonfigurasi, dan menjalankan Gaussian 16, serta cara menggunakan GaussView untuk memodelkan molekul dan menganalisis hasil perhitungan, Anda sekarang memiliki alat yang kuat untuk melakukan kimia komputasi. Gaussian 16 dan GaussView bersama-sama memberikan kombinasi fungsionalitas yang memungkinkan Anda untuk menjelajahi dunia molekuler dan mendapatkan wawasan yang lebih dalam tentang sistem kimia.
