@@ -72,9 +72,41 @@ echo $g16root
 ```
 
 ## Setting Modul untuk Gaussian 16
-Menyiapkan modul untuk Gaussian 16 untuk mempermudah penggunaannya:
-1. **Membuat Modul**: Buat file modul untuk Gaussian 16 di direktori `modules`.
-2. **Memuat Modul**: Muat modul yang telah dibuat agar Gaussian 16 bisa digunakan.
+Untuk mempermudah penggunaan Gaussian 16 di server atau HPC, buat modul untuk mengatur lingkungan Gaussian. Berikut adalah langkah-langkah membuat file modul:
+1. **Membuat Modul**: Buat folder dan file modul untuk Gaussian 16 di direktori `modules`.
+```bash
+mkdir -p /mgpfs/home/username/modules/g16
+nano /mgpfs/home/username/modules/g16/g16
+```
+Isi file g16 dengan konfigurasi berikut:
+```bash
+#%Module1.0
+# Module file for Gaussian16
+
+setenv GAUSS_EXEDIR /mgpfs/home/username/software/g16
+setenv GAUSS_SCRDIR /mgpfs/home/username/software/g16/scratch
+prepend-path PATH /mgpfs/home/username/software/g16
+setenv GAUSS_MEM 2GB # sesuaikan dengan spesifikasi yang diperlukan
+setenv GAUSS_NPROC 4 # sesuaikan dengan spesifikasi yang diperlukan
+```
+2. **Memuat Modul**: Muat modul yang telah dibuat agar Gaussian 16 bisa digunakan, muat modul tersebut dengan perintah berikut:
+```bash 
+module use /mgpfs/home/username/modules
+module load g16
+# anda juga bisa menaruh ini di bashrc agar tidak mengulangi proses load module terus menerus
+```
+Lakukan konfigurasi ulang shell untuk menambahkan sistem module di 'bashrc'
+```bash
+nano ~/.bashrc
+# Tambahkan baris berikut
+module use /mgpfs/home/username/modules
+module load g16
+export MODULEPATH=$MODULEPATH:$HOME/modules
+```
+Jangan lupa untuk menetapkan konfigurasi terbaru yang sudah kita susun:
+```bash
+source ~/.bashrc
+```
 
 ## Menjalankan Gaussian 16
 Langkah-langkah dasar untuk menjalankan Gaussian 16:
