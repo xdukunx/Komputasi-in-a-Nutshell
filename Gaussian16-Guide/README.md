@@ -178,8 +178,8 @@ Jika perhitungan Gaussian Anda mencakup spektrum UV-Vis atau perhitungan semacam
 - Pilih tab "Results"
 - Untuk memeriksa Grafik Spektrum, pilih tab sesuai dengan metode perhitungan yang sudah dilakukan
 
-![UV](https://github.com/user-attachments/assets/a3caa4de-3567-4380-ad94-b68b7bb5c8ee)
-
+![UV](https://github.com/user-attachments/assets/a8c812fd-a143-4acc-ac75-37354f1b2a1b)
+![GraphUV](https://github.com/user-attachments/assets/953ba479-af90-4b55-b18d-a13cb09818e8)
 - Untuk memeriksa Energi Optimasi, pilih "Summary"
 
 ![Summary](https://github.com/user-attachments/assets/cb2cbce5-a2bd-40c5-ac56-82e467e47455)
