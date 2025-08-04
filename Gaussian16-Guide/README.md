@@ -167,7 +167,9 @@ Setelah file output dibuka, GaussView akan menampilkan struktur geometri molekul
 GaussView akan memungkinkan Anda untuk memilih orbital tertentu, seperti HOMO (Highest Occupied Molecular Orbital) atau LUMO (Lowest Unoccupied Molecular Orbital). Dengan langkah berikut:
 - Pilih tab "Tools"
 - Pilih tab "MOs.."
+
 ![mbukakHomo](https://github.com/user-attachments/assets/cd41c222-fae8-439e-9568-c2d74e24956f)
+
 - Akan muncul window yang akan menampilkan posisi dan energi HOMO dan LUMO
 ![windowHomo](https://github.com/user-attachments/assets/fbc8926a-1a53-4100-9632-d22df78f394d)
 ## Memeriksa
