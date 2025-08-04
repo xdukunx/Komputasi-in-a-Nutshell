@@ -114,7 +114,9 @@ Setelah Anda berhasil menginstal Gaussian 16, langkah selanjutnya adalah menyiap
 [GaussView](https://drive.google.com/file/d/12rvIudLKtjXZCQGpXtvfxb-rztYlLvnd/view?usp=drive_link) adalah antarmuka grafis untuk Gaussian 16 yang dirancang untuk membantu pengguna dalam memodelkan struktur molekul, menyiapkan file input, dan membaca hasil output dari perhitungan Gaussian 16.
 
 ![tampilanGaussView](https://github.com/user-attachments/assets/df93734e-308d-40d8-8863-991c1926d208)
+
 Setelah molekul dimodelkan, GaussView memungkinkan Anda untuk menyimpan file input untuk Gaussian 16 dalam format .com atau .gjf. Anda dapat memilih jenis perhitungan yang ingin dilakukan, seperti optimasi geometri atau perhitungan energi.
+![pembuatangjf](https://github.com/user-attachments/assets/e7ae1486-889e-451e-b70b-97c2ca2496b5)
 
 ## Menjalankan Batch
 Jika ingin menjalankan perhitungan di server menggunakan **job scheduler**:
