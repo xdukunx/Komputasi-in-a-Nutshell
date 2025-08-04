@@ -116,7 +116,22 @@ Setelah Anda berhasil menginstal Gaussian 16, langkah selanjutnya adalah menyiap
 ![tampilanGaussView](https://github.com/user-attachments/assets/df93734e-308d-40d8-8863-991c1926d208)
 
 Setelah molekul dimodelkan, GaussView memungkinkan Anda untuk menyimpan file input untuk Gaussian 16 dalam format .com atau .gjf. Anda dapat memilih jenis perhitungan yang ingin dilakukan, seperti optimasi geometri atau perhitungan energi.
+
 ![pembuatangjf](https://github.com/user-attachments/assets/e7ae1486-889e-451e-b70b-97c2ca2496b5)
+
+Setelah file input dibuat, tahapan selanjutnya yaitu menguji molekul yang kita buat di Gaussian. Pindahkan file input ke Server untuk proses kalkulasi.
+Setelah file input siap, jalankan Gaussian 16 dengan perintah berikut:
+```bash
+g16 input_file.gjf > output_file.log & # Penggunaan tanda "&" yaitu agar proses kalkulasi berjalan di background dan kita bisa beraktivitas yang lain
+# Gantilah input_file dengan nama file input yang telah Anda buat dan output_file dengan nama yang anda inginkan
+```
+Untuk memeriksa proses kalkulasi, jalankan perintah berikut:
+```bash
+tail -f output_file.log
+```
+Apabila berhasil berjalan, nantinya akan muncul beberapa baris yang sedang melakukan proses kalkulasi matematis. Apabila proses kalkulasi, akan muncul berbagai data seperti **waktu yang ditempuh**,**energi optimasi**, dan **quotes** dari berbagai ilmuwan yang khas dari Gaussian.
+
+![g16berhasil](https://github.com/user-attachments/assets/c857bfda-04e0-4210-b04f-45c77cfe4a98)
 
 ## Menjalankan Batch
 Jika ingin menjalankan perhitungan di server menggunakan **job scheduler**:
