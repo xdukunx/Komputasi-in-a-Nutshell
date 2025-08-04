@@ -21,9 +21,9 @@ Panduan ini menjelaskan cara menginstal, mengonfigurasi, dan menjalankan **Gauss
 
 ## Instalasi Gaussian 16
 Langkah-langkah untuk menginstal Gaussian 16 di sistem Anda:
-1. **Persiapkan Direktori** tempat instalasi, anda bebas menggunakan metode apapun (Terminal/SFTP)
+1. **Persiapkan Direktori** tempat instalasi, anda bebas menggunakan metode apapun (Terminal/SFTP). Sebagai contoh, saya menaruh Gaussian 16 di 
 ```bash
-Sebagai contoh, saya menaruh Gaussian 16 di /home/mfadhana/software/g16
+/home/mfadhana/software/g16
 ```
 
 2. **Unduh dan Ekstrak Paket** Gaussian 16 ke dalam direktori tersebut.
