@@ -134,9 +134,28 @@ Apabila berhasil berjalan, nantinya akan muncul beberapa baris yang sedang melak
 ![g16berhasil](https://github.com/user-attachments/assets/c857bfda-04e0-4210-b04f-45c77cfe4a98)
 
 ## Menjalankan Batch
-Jika ingin menjalankan perhitungan di server menggunakan **job scheduler**:
-1. **Buat Skrip Batch** untuk SLURM atau PBS.
-2. **Jalankan Skrip** dengan job scheduler (misalnya, `sbatch`).
+Jika Anda bekerja dengan server atau menggunakan job scheduler (misalnya SLURM atau PBS), Anda dapat menjalankan perhitungan Gaussian 16 dalam mode batch. 
+
+Jika Anda menggunakan SLURM untuk mengelola job di server, buat file skrip batch yang berisi perintah untuk menjalankan perhitungan Gaussian 16. Contohnya seperti file "Gauss.sh" berikut:
+```bash
+#!/bin/bash
+#SBATCH --job-name=optonly
+#SBATCH --partition=short
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=4
+#SBATCH --error=error.txt
+## To handle memory
+ulimit -l unlimited
+echo "start = date"
+# Put your job here
+/mgpfs/home/username/software/g16/l1.exe Pt.gjf > Pt.log #ganti sesuai dengan nama file input & output
+echo "end = date"
+```
+Setelah skrip batch selesai dibuat, jalankan perhitungan dengan perintah berikut:
+```bash
+sbatch Gauss.sh # Ganti Gauss.sh sesuai dengan nama file skrip batch yang anda buat
+```
 
 ## Troubleshooting
 Solusi untuk masalah umum yang mungkin terjadi selama instalasi dan penggunaan Gaussian 16.
