@@ -54,6 +54,22 @@ export GAUSS_EXEDIR=$g16root
 #(bila menggunakan text editor, bisa langsung ctrl+s.)
 #(bila menggunakan nano, bisa save dengan menekan ctrl+X, kemudian tekan Y untuk menyimpan perubahan, dan tekan Enter untuk keluar.)
 ```
+Agar perubahan tersebut dapat diterapkan, kita perlu memuat ulang konfigurasi di terminal, lakukan dengan perintah berikut:
+```bash
+source ~/.bashrc
+```
+## Pengujian Keberhasilan Instalasi
+Jalankan perintah berikut untuk memeriksa apakah Gaussian 16 terinstal dengan benar:
+```bash
+g16
+```
+Jika instalasi berhasil, Anda akan melihat output yang menunjukkan versi Gaussian 16 yang terinstal beserta informasi lainnya.
+Untuk memeriksa apakah variabel GAUSS_EXEDIR dan g16root sudah diatur dengan benar, Anda bisa menjalankan:
+```bash
+echo $GAUSS_EXEDIR
+echo $g16root
+# Hasilnya harus mengarah ke direktori di mana Anda menginstal Gaussian 16, misalnya /home/username/software/g16.
+```
 
 ## Setting Modul untuk Gaussian 16
 Menyiapkan modul untuk Gaussian 16 untuk mempermudah penggunaannya:
