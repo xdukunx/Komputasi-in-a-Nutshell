@@ -35,6 +35,21 @@ tar -xvzf gaussian16.tar.gz
 Ganti username dengan milik masing2
 ```
 
+3. **Instalasi Gaussian 16**
+Pastikan file sudah diekstrak dengan benar, hal ini ditandai dengan adanya folder seperti g16,lib,bin, dan lainnya.
+Gaussian 16 menyediakan skrip install yang terletak di dalam folder bsd/. Anda harus menjalankan skrip ini untuk melakukan instalasi lebih lanjut.
+```bash
+cd bsd
+./install
+```
+Agar sistem dapat mengenali perintah g16, kita harus mengenalkan tempat instalasi g16 kita agar diketahui oleh lingkungan sistem. Edit file **~/.bashrc**
+```bash
+nano ~/.bashrc
+#tambahkan baris kode berikut
+export GAUSS_EXEDIR=/home/username/software/g16
+export PATH=$GAUSS_EXEDIR:$PATH
+```
+
 ## Setting Modul untuk Gaussian 16
 Menyiapkan modul untuk Gaussian 16 untuk mempermudah penggunaannya:
 1. **Membuat Modul**: Buat file modul untuk Gaussian 16 di direktori `modules`.
