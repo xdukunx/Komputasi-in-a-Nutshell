@@ -112,6 +112,7 @@ source ~/.bashrc
 Setelah Anda berhasil menginstal Gaussian 16, langkah selanjutnya adalah menyiapkan file input yang akan digunakan untuk perhitungan kimia komputasi. File input untuk Gaussian 16 dapat berupa dua format utama: .com dan .gjf. Kedua format ini pada dasarnya memiliki fungsi yang sama, yaitu untuk memberikan instruksi kepada Gaussian 16 mengenai perhitungan yang akan dilakukan, tetapi .com lebih umum digunakan, sedangkan .gjf lebih sering digunakan untuk file yang dihasilkan atau diekspor dari aplikasi lain, seperti GaussView.
 
 [GaussView]((https://drive.google.com/file/d/12rvIudLKtjXZCQGpXtvfxb-rztYlLvnd/view?usp=drive_link)) adalah antarmuka grafis untuk Gaussian 16 yang dirancang untuk membantu pengguna dalam memodelkan struktur molekul, menyiapkan file input, dan membaca hasil output dari perhitungan Gaussian 16.
+
 ![tampilanGaussView](https://github.com/user-attachments/assets/df93734e-308d-40d8-8863-991c1926d208)
 Setelah molekul dimodelkan, GaussView memungkinkan Anda untuk menyimpan file input untuk Gaussian 16 dalam format .com atau .gjf. Anda dapat memilih jenis perhitungan yang ingin dilakukan, seperti optimasi geometri atau perhitungan energi.
 
