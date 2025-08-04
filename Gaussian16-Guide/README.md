@@ -15,15 +15,20 @@ Gaussian16 adalah perangkat lunak kimia komputasi yang digunakan untuk perhitung
 Panduan ini menjelaskan cara menginstal, mengonfigurasi, dan menjalankan **Gaussian 16**, perangkat lunak kimia komputasi untuk perhitungan energi, struktur molekul, serta spektrum optik dan reaksi kimia.
 
 ## Persyaratan Sistem
-- Sistem operasi Linux (dengan akses ke terminal dan hak akses root atau sudo)
+- Sistem operasi Linux/Windows/MacOS (dengan akses ke terminal dan hak akses penuh ke directory masing2)
 - Ruang penyimpanan yang cukup untuk instalasi
 - Akses ke server dengan Gaussian 16
 
 ## Instalasi Gaussian 16
 Langkah-langkah untuk menginstal Gaussian 16 di sistem Anda:
-1. **Persiapkan Direktori** tempat instalasi.
+1. **Persiapkan Direktori** tempat instalasi, anda bebas menggunakan metode apapun (Terminal/SFTP)
 2. **Unduh dan Ekstrak Paket** Gaussian 16 ke dalam direktori tersebut.
-3. **Instalasi** dan pastikan file terinstal dengan benar.
+
+```bash
+cd /home/username/software/g16
+tar -xvzf gaussian16.tar.gz
+Ganti username dengan 
+```
 
 ## Setting Modul untuk Gaussian 16
 Menyiapkan modul untuk Gaussian 16 untuk mempermudah penggunaannya:
