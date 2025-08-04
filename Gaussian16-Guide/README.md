@@ -46,8 +46,13 @@ Agar sistem dapat mengenali perintah g16, kita harus mengenalkan tempat instalas
 ```bash
 nano ~/.bashrc
 #tambahkan baris kode berikut
-export GAUSS_EXEDIR=/home/username/software/g16
-export PATH=$GAUSS_EXEDIR:$PATH
+export g16root=$HOME/software/g16 #sesuai tempat gaussian diinstall
+export PATH=$g16root:$PATH
+export GAUSS_SCRDIR=$HOME/software/g16/scratch
+export GAUSS_EXEDIR=$g16root
+#lalu save 
+#(bila menggunakan text editor, bisa langsung ctrl+s.)
+#(bila menggunakan nano, bisa save dengan menekan ctrl+X, kemudian tekan Y untuk menyimpan perubahan, dan tekan Enter untuk keluar.)
 ```
 
 ## Setting Modul untuk Gaussian 16
