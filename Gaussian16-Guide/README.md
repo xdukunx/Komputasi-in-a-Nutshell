@@ -1,0 +1,2 @@
+# Gaussian16 - Perhitungan DFT - TD DFT Kimia Komputasi
+Gaussian16 adalah perangkat lunak kimia komputasi yang digunakan untuk perhitungan energi, struktur molekul, sifat optik, dan banyak lagi, terutama untuk perhitungan kimia kuantum. Ini sangat berguna dalam simulasi molekul, DFT (Density Functional Theory), dan post-Hartree-Fock methods untuk perhitungan sifat molekul seperti spektrum UV-VIS dan analisis dinamik reaksi kimia. [(unduh di sini)](https://gaussian.com/)
