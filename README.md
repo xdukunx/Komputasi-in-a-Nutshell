@@ -76,6 +76,7 @@ Untuk login ke SSH (Secure Shell), kamu memerlukan akses ke server yang mendukun
  Gantilah username dengan nama pengguna di server, dan hostname_or_ip dengan alamat IP atau nama domain server.
 ```
 Setelah menjalankan perintah tersebut, jika diminta, masukkan password akun pengguna di server.
+
 3. Jika menggunakan private key (baris kode pengaman untuk memberikan akses hanya untuk 1 device tertentu), pastikan private key ada di komputer yang kamu gunakan dan sudah diatur di server
 - Kamu dapat menambahkan ssh key dengan perintah berikut:
 ```bash
