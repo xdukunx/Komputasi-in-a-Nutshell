@@ -27,7 +27,7 @@ Langkah-langkah untuk menginstal Gaussian 16 di sistem Anda:
 ```bash
 cd /home/username/software/g16
 tar -xvzf gaussian16.tar.gz
-Ganti username dengan 
+Ganti username dengan milik masing2
 ```
 
 ## Setting Modul untuk Gaussian 16
